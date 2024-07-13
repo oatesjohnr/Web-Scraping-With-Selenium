@@ -14,12 +14,13 @@ def get_data(url, categories):
     browser_options = ChromeOptions()
     browser_options.headless = True
 
-    driver = Chrome(executable_path=CHROME_DRIVER_PATH, options=browser_options)
+    driver = Chrome(options=browser_options)
     driver.get(url)
     driver.implicitly_wait(10)
     data = []
     for category in categories:
-        humor = driver.find_element_by_xpath(f'//a[contains(text(),{category})]')
+       # humor = driver.find_element_by_xpath(f'//a[contains(text(),{category})]')
+        humor = driver.find_element(By.XPATH, f'//a[contains(text(),{category})]')
         humor.click()
 
         try:
