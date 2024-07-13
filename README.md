@@ -1,9 +1,5 @@
 # Web Scraping With Selenium
 
-[![Oxylabs promo code](https://user-images.githubusercontent.com/129506779/250792357-8289e25e-9c36-4dc0-a5e2-2706db797bb5.png)](https://oxylabs.go2cloud.org/aff_c?offer_id=7&aff_id=877&url_id=112)
-
-[![](https://dcbadge.vercel.app/api/server/eWsVUJrnG5)](https://discord.gg/GbxmdGhZjq)
-
 ## Table of Contents
 
   - [Setting up Selenium](#setting-up-selenium)
@@ -70,7 +66,7 @@ driver.quit()
 ```
 
 ## Data Extraction with Selenium - Locating Elements
-
+## This part below is out of date
 The first step of extracting the data is to locate the elements. Selenium offers a variety of find_element methods to help locate elements on a page:
 
 - `find_element_by_id` - Finds element by the `id` attribute
