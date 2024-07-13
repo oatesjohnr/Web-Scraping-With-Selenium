@@ -31,9 +31,9 @@ def get_data(url, categories):
             raise e
 
         for book in books:
-            title = book.find_element_by_css_selector("h3 > a")
-            price = book.find_element_by_css_selector(".price_color")
-            stock = book.find_element_by_css_selector(".instock.availability")
+            title = book.find_element(By.CSS_SELECTOR,"h3 > a")
+            price = book.find_element(By.CSS_SELECTOR,".price_color")
+            stock = book.find_element(By.CSS_SELECTOR,".instock.availability")
             data.append({
                 'title': title.get_attribute("title"),
                 'price': price.text,
