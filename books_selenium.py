@@ -1,11 +1,12 @@
 import pandas as pd
+
 from selenium.webdriver import Chrome, ChromeOptions
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 
-CHROME_DRIVER_PATH = 'c:/WebDrivers/chromedriver.exe'
+CHROME_DRIVER_PATH = 'c:/chromedriver.exe'
 HOMEPAGE = "http://books.toscrape.com"
 
 
